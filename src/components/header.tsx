@@ -10,6 +10,7 @@ export default async function Header() {
       <div className='container mx-auto flex items-center justify-between py-4'>
         <Link href='/'>Home</Link>
       </div>
+      <Link href='/sign-up'>Sign up</Link>
     </div>
   );
 }
