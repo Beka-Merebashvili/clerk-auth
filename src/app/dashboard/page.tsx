@@ -1,12 +1,13 @@
+import { TextRevealCardPreview } from "../snippet/TextRevealCardSnippet";
 import { auth, currentUser } from "@clerk/nextjs/server";
 
 export default async function DashboardPage() {
-  const { userId } = auth();
+  // const { userId } = auth();
   const user = await currentUser();
 
   return (
-    <div className="mt-10 text-start max-w-xl mx-auto bg-neutral-200 p-5 rounded">
-      <h1 className="text-4xl font-bold">Welcome </h1>
+    <div className="mt-10 text-start  mx-auto">
+      {/* <h1 className="text-4xl font-bold">Welcome </h1>
       <ul className="list-none mt-10">
         <li className="mb-2">
           <span className="font-semibold">First Name:</span> {user?.firstName}
@@ -18,7 +19,8 @@ export default async function DashboardPage() {
           <span className="font-semibold">Email:</span>{" "}
           {user?.emailAddresses[0].emailAddress}
         </li>
-      </ul>
+      </ul> */}
+      <TextRevealCardPreview></TextRevealCardPreview>
     </div>
   );
 }
