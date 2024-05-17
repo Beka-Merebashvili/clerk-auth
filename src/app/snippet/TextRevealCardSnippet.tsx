@@ -2,7 +2,6 @@
 import React from "react";
 import {
   TextRevealCard,
-  TextRevealCardDescription,
   TextRevealCardTitle,
 } from "../../components/ui/text-reveal-card";
 import { auth, currentUser } from "@clerk/nextjs/server";
@@ -18,10 +17,6 @@ export async function TextRevealCardPreview() {
         <TextRevealCardTitle className="text text-2xl">
           Hi {user?.firstName}
         </TextRevealCardTitle>
-        {/* <TextRevealCardDescription>
-          This is a text reveal card. Hover over the card to reveal the hidden
-          text.
-        </TextRevealCardDescription> */}
       </TextRevealCard>
     </div>
   );
