@@ -7,11 +7,11 @@ export default async function Header() {
     <div className="bg-gray-600 text-neutral-100">
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link href="/">Home</Link>
+        <Link href='/dashboard'>Dashboard</Link>
         <SignedOut>
           <SignInButton />
         </SignedOut>
         <SignedIn>
-        <Link href='/dashboard'>Dashboard</Link>
           <UserButton />
         </SignedIn>
       </div>
