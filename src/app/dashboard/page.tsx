@@ -6,7 +6,6 @@ export default async function DashboardPage() {
 
   return (
     <div className="mt-10 text-start  mx-auto">
-  
       <TextRevealCardPreview></TextRevealCardPreview>
     </div>
   );
